@@ -1,6 +1,6 @@
 package com.lambda.modules
 
-import com.lambda.ExamplePlugin
+import com.lambda.LambdaUtilities
 import com.lambda.client.event.SafeClientEvent
 import com.lambda.client.event.events.PlayerAttackEvent
 import com.lambda.client.mixin.extension.syncCurrentPlayItem
@@ -26,7 +26,7 @@ internal object ExampleModule : PluginModule(
     name = "ExampleModule",
     category = Category.MISC,
     description = "Example module which automatically switchs to the best tools when mining or attacking",
-    pluginMain = ExamplePlugin
+    pluginMain = LambdaUtilities
 ) {
     private val switchBack = setting("Switch Back", true)
     private val timeout by setting("Timeout", 20, 1..100, 5, { switchBack.value })

@@ -1,11 +1,11 @@
 {
-  "name": "ExamplePlugin",
+  "name": "lambda-utilities",
   "version": "1.0",
-  "description": "Example implementation of a plugin for Lambda.",
-  "url": "https://github.com/lambda-client/ExamplePlugin",
-  "authors": [ "me", "you" ],
-  "main_class": "com.lambda.ExamplePlugin",
+  "description": "Some utilities",
+  "url": "https://github.com/Luigit12/lambda-utilities",
+  "authors": [ "Seal", "9t2" ],
+  "main_class": "com.lambda.LambdaUtilities",
   "min_api_version": "3.0",
-  "mixins": [ "mixins.ExamplePlugin.json" ],
+  "mixins": [ "mixins.LambdaUtilities.json" ],
   "required_plugins": []
 }
